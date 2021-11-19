@@ -1,3 +1,9 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  ActiveAdmin.routes(self)
+  
+  resources :books
+  resources :publishers
+  resources :authors
+  resources :literares_genres
+
 end
